@@ -1,0 +1,43 @@
+// Here you can add other styles
+
+video {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.breadcrumb {
+    padding: 1.50rem 1rem;
+    display: flex;
+ 
+}
+.bg-info {
+    background-color: #F44336 !important;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #f44336;
+    border-color: #f44336;
+}
+.card.bg-info {
+    border-color: #f44336;
+}
+
+@mixin background($imgpath, $position:0 0, $repeat: no-repeat) {
+    background: {
+        image: url($imgpath);
+        position: $position;
+        repeat: $repeat;
+    }
+}
+.bg-img {
+    @include background('/assets/img/bg/bg1.jpg');
+}
+
+@media screen and (max-width: 991px){
+.bg-img {
+    background-attachment: scroll !important;
+    background-position: 50% 0% !important;
+}
+}

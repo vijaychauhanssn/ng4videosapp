@@ -1,0 +1,99 @@
+      <div class="container-fluid">
+          <div class="animated fadeIn">
+              <div class="row">
+                <div class="col-sm-6 col-lg-3">
+                  <div class="card text-white bg-primary">
+                    <div class="card-body">
+                      <div class="text-value text-center
+                      " *ngFor="let user of users  | slice:0:1"><i class="icon-people"></i> {{users.length}}</div>
+                      <div class="text-center">Total Users</div>
+                    </div>
+                  </div>
+                </div><!--/.col-->
+                <div class="col-sm-6 col-lg-3">
+                  <div class="card text-white bg-info">
+                    <div class="card-body">
+                      <div class="text-value text-center" *ngFor="let video of videos  | slice:0:1"><i class="icon-user"></i> {{videos.length}}</div>
+                      <div class="text-center">Total Videos</div>
+                    </div>
+                  </div>
+                </div><!--/.col-->
+                <div class="col-sm-6 col-lg-3">
+                  <div class="card text-white bg-warning">
+                    <div class="card-body">
+                       <div class="text-value text-center">1</div>
+                      <div class="text-center">Members online</div>
+                    </div>
+                  </div>
+                </div><!--/.col-->
+                <div class="col-sm-6 col-lg-3">
+                  <div class="card text-white bg-danger">
+                    <div class="card-body">
+                      <div class="text-value text-center">3</div>
+                      <div class="text-center">User online</div>
+                    </div>
+                  </div>
+                </div><!--/.col-->
+              </div><!--/.row-->
+            </div>
+         <div class="row justify-content-center">
+            <div class="col-md-12">
+               <div class="card-group mb-0">
+                  <div class="card p-4">
+                     <div class="card-body">
+                        <h1 class="text-muted">Hi! {{currentUser.firstName}}</h1>
+                        <p >You're logged in with  Our Team</p>
+                        <h3 class="text-muted d-none">All registered users:</h3>
+                        <ul class="d-none">
+                           <li *ngFor="let user of users">
+                              {{user.username}} ({{user.firstName}} {{user.lastName}})
+                              - <a  class="d-none" (click)="deleteUser(user._id); login()">Delete</a>
+                              
+                           </li>
+                        </ul>
+                         <div class="animated fadeIn">
+                           <div class="row">
+                              <!--div class="col-sm-12 col-md-12 col-lg-6"  *ngFor="let v of vs">
+                                 <div class="card">
+                                    <div class="card-header">
+                                       Video
+                                    </div>
+                                    <div class="card-body">
+                                       <video src="assets/videos/{{v.mp4}}" type="video/mp4"></video>
+                                    </div>
+                                 </div>
+                              </div-->
+                              <!--/.col-->
+                           </div>
+                            <!--/.row-->   
+                        </div>
+                        <!--/.animated--> 
+                        <div class="animated fadeIn">
+                           <div class="row">
+                              <div class="col-sm-12 col-md-12 col-lg-6"  *ngFor="let video of videos">
+                                 <div class="card">
+                                    <div class="card-header">
+                                       <h2>{{video.name}}</h2>
+                                    </div>
+                                    <div class="card-body">
+                                       <p>{{video.description}}</p>
+                                    </div>
+                                    <div class="card-body">
+                                        <video (click)="toggleVideo()"    preload="auto" controls #videoPlayer>
+                                          <source src="assets/{{video.url}}" type="video/mp4">
+                                       </video>
+                                    </div>
+                                 </div>
+                              </div>
+                              <!--/.col-->
+                           </div>
+                            <!--/.row-->   
+                        </div>
+                        <!--/.animated-->    
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- /.conainer-fluid -->

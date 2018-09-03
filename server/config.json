@@ -1,0 +1,6 @@
+﻿{
+    "connectionString": "mongodb://admin:admin4044@ds111082.mlab.com:11082/heroku_0p9wsfrq",
+    "apiUrl": "https://videosapps.herokuapp.com",
+    "secret": "S7g1u6aacJVuYPKBHF3b"
+
+}

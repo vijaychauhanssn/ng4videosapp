@@ -1,0 +1,35 @@
+[debug] [2018-08-09T17:43:24.111Z] ----------------------------------------------------------------------
+[debug] [2018-08-09T17:43:24.120Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Anurag Thakur\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase deploy
+[debug] [2018-08-09T17:43:24.121Z] CLI Version:   4.0.3
+[debug] [2018-08-09T17:43:24.121Z] Platform:      win32
+[debug] [2018-08-09T17:43:24.121Z] Node Version:  v8.11.3
+[debug] [2018-08-09T17:43:24.122Z] Time:          Thu Aug 09 2018 23:13:24 GMT+0530 (India Standard Time)
+[debug] [2018-08-09T17:43:24.122Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-08-09T17:43:24.188Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-08-09T17:43:24.189Z] > authorizing via signed-in user
+[debug] [2018-08-09T17:43:24.195Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-08-09T17:43:24.196Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/xWuRgqfuITBPK4ntP6ySAZSNlX7jO1MAq13W8bIcu7w',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Thu Aug 09 2018 23:13:24 GMT+0530 (India Standard Time)
+[debug] [2018-08-09T17:43:24.931Z] <<< HTTP RESPONSE 200
+[debug] [2018-08-09T17:43:25.009Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/videos-apps  
+  
+ Thu Aug 09 2018 23:13:25 GMT+0530 (India Standard Time)
+[debug] [2018-08-09T17:43:27.560Z] <<< HTTP RESPONSE 200
+[debug] [2018-08-09T17:43:27.562Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/videos-apps/tokens  
+  
+ Thu Aug 09 2018 23:13:27 GMT+0530 (India Standard Time)
+[debug] [2018-08-09T17:43:28.838Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'videos-apps'...
+[info] 
+[info] i  deploying hosting
+[info] i  hosting: preparing public directory for upload...
+[debug] [2018-08-09T17:43:40.254Z] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/videos-apps/uploads/-LJUmJygPNVk9FXmRYbm?fileCount=290&message=  
+  
+ Thu Aug 09 2018 23:13:40 GMT+0530 (India Standard Time)
